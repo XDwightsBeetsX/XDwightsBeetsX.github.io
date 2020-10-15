@@ -5,22 +5,23 @@
     <meta charset="utf-8" description="basic web template">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="dynamic.js"></script>
 </head>
 
 <body>
     <div class="title">
-        <h1>Howdy! I'm John</I></I></h1>
+        <h1>Howdy! I'm John</h1>
     </div>
 
     <div id="content">
         <div class="menu">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
+            <a href="#" onclick="return show('main')">Bio</a>
+            <a href="#" onclick="return show('tws')">The Worlds Toughest Canoe Race</a>
+            <a href="#" onclick="return show('ss')">Stock Sharingan Project</a>
+            <a href="#" onclick="return show('math')">My Maths Review</a>
         </div>
 
-        <div class="main">
+        <div class="main default-main" id="main">
             <h2>Bio I Guess...</h2>
             <p>
                 My name is John Gutierrez, and I am the loudest and proudest member of the 
@@ -39,6 +40,29 @@
                 away from Excel.
             </p>
             <img id="profile-pic" src="img/john.jpg" alt="profile-pic">
+        </div>
+
+        <div class="main" id="tws">
+            <h2>The Worlds Toughest Canoe Race, The Texas Water Safari</h2>
+            <p>
+                asdf
+            </p>
+            
+            <img id="tws-pic1" src="" alt="tws-pic1">
+        </div>
+
+        <div class="main" id="ss">
+            <h2>Current Side Project: Stock Sharingan</h2>
+            <p>
+                asdf
+            </p>
+        </div>
+
+        <div class="main" id="math">
+            <h2>My Math Review</h2>
+            <p>
+                asdf
+            </p>
         </div>
 
         <div class="right">

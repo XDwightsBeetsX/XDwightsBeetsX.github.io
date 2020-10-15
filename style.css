@@ -4,7 +4,7 @@
 
 body{
     font-family: Verdana;
-    color: #aaaaaa;
+    color: #8d8d8d;
 }
 
 #content{
@@ -24,19 +24,27 @@ body{
 }
 
 .menu a{
+    text-decoration: none;
     background-color: #e5e5e5;
+    color: #8d8d8d;
     padding: 8px;
     margin-top: 7px;
     display: block;
     width: 100%;
-    color: black;
+    font-weight: bold;
 }
 
 .main{
     float:left;
     width:60%;
     padding:0 20px;
+    display: none;
 }
+
+.default-main{
+    display: block;
+}
+
 
 #profile-pic{
     display: block;
