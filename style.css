@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana;
+    color: #aaaaaa;
+}
+
+#content{
+    overflow: auto;
+}
+
+.title{
+    background-color: #e5e5e5;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.menu a{
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.main{
+    float:left;
+    width:60%;
+    padding:0 20px;
+}
+
+#profile-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.right{
+    background-color:#e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+@media only screen and (max-width:620px) {
+    .menu, .main, .right {
+        width: 100%;
+    }
+}

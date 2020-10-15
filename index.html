@@ -2,81 +2,60 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" description="basic web template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-    .menu {
-      float:left;
-      width:20%;
-      text-align:center;
-    }
-
-    .menu a {
-      background-color: #e5e5e5;
-      padding:8px;
-      margin-top:7px;
-      display:block;
-      width:100%;
-      color:black;
-    }
-
-    .main {
-      float:left;
-      width:60%;
-      padding:0 20px;
-    }
-
-    .right {
-      background-color:#e5e5e5;
-      float:left;
-      width:20%;
-      padding:15px;
-      margin-top:7px;
-      text-align:center;
-    }
-
-    @media only screen and (max-width:620px) {
-      .menu, .main, .right {
-        width:100%;
-      }
-    }
-
-  </style>
+    <meta charset="utf-8" description="basic web template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family: Verdana; color: #aaaaaa;">
-  <div style="background-color:#e5e5e5; padding:15px; text-align:center;">
-    <h1>Title</h1>
-  </div>
-
-  <div style="overflow:auto">
-    <div class="menu">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
+<body>
+    <div class="title">
+        <h1>Howdy! I'm John</I></I></h1>
     </div>
 
-    <div class="main">
-      <h2>Main body</h2>
-      <p>
-        Sweet description
-      </p>
+    <div id="content">
+        <div class="menu">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+
+        <div class="main">
+            <h2>Bio I Guess...</h2>
+            <p>
+                My name is John Gutierrez, and I am the loudest and proudest member of the 
+                fightin Texas Aggie class of '22 EY WHOOP!
+            </p>
+            <p>
+                I'm studying Mechanical Engineering, with a minor in Computer Science. I am
+                passianate about applying a computational and robust computer science approach to 
+                mechanical engineering challenges.
+            </p>
+            <p>
+                I'm currently learning to write production level code for the A&M 
+                Engineering System Lab Compass site, a web page where clients analyze building HVAC data 
+                such as airflow, humidity, and temperatures. I got started writing 
+                python scripts in the past to help transition a government database 
+                away from Excel.
+            </p>
+            <img id="profile-pic" src="img/john.jpg" alt="profile-pic">
+        </div>
+
+        <div class="right">
+            <h2>Right Panel</h2>
+            <p>
+                More cool info
+            </p>
+        </div>
     </div>
 
-    <div class="right">
-      <h2>Right Panel</h2>
-      <p>More cool info</p>
+    <div class="footer">
+        <p>
+            Please see my <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/">LinkedIn</a> 
+            and <a href="https://github.com/XDwightsBeetsX">Github</a> 
+            or shoot me an <a href="mailto:gutierrezjohn2000@gmail.com">email</a>!
+        </p>
     </div>
-  </div>
-
-  <div style="background-color: #e5e5e5; text-align:center; padding:10px; margin-top:7px;">
-    © copyright usa inc
-  </div>
 </body>
 
 </html>
