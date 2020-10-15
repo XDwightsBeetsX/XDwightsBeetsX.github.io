@@ -1,25 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" description="basic web template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="dynamic.js"></script>
+</head>
+
 <body>
-    <h1>John Gutierrez</h1>
-    
-    <img src="img/john.JPG" style="width:400px; height:500px;" alt="John Gutierrez Aggie">
+    <div class="title">
+        <h1>Howdy! I'm John</h1>
+    </div>
 
-    <p>Howdy! I'm John Gutierrez, TAMU MEEN class of '22 EY WHOOP!</p>
-    
-    <p>I'm a mechanical engineer, but love computer science.</p>
-    
-    <p>I am interested in:</p>
-    <li>Data structures</li>
-    <li>OOP</li>
-    <li>Circuit Logic</li>
-    <li>Web Dev</li>
-    <li>Game Dev</li>
+    <div id="content">
+        <div class="menu">
+            <a href="#" onclick="return show('main')">Bio</a>
+            <a href="#" onclick="return show('tws')">The Worlds Toughest Canoe Race</a>
+            <a href="#" onclick="return show('ss')">Stock Sharingan Project</a>
+            <a href="#" onclick="return show('math')">My Maths Review</a>
+        </div>
 
-    <p>Please see my <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/">LinkedIn</a> 
-        and <a href="https://github.com/XDwightsBeetsX">Github</a>.</p>
-    
-    <p>I'm learning to play guitar, enjoy hiking and bouldering, and like to longboard and bike.</p>
+        <div class="main default-main" id="main">
+            <h2>Bio I Guess...</h2>
+            <p>
+                My name is John Gutierrez, and I am the loudest and proudest member of the 
+                fightin Texas Aggie class of '22 EY WHOOP!
+            </p>
+            <p>
+                I'm studying Mechanical Engineering, with a minor in Computer Science. I am
+                passianate about applying a computational and robust computer science approach to 
+                mechanical engineering challenges.
+            </p>
+            <p>
+                I'm currently learning to write production level code for the A&M 
+                Engineering System Lab Compass site, a web page where clients analyze building HVAC data 
+                such as airflow, humidity, and temperatures. I got started writing 
+                python scripts in the past to help transition a government database 
+                away from Excel.
+            </p>
+            <img id="profile-pic" src="img/john.jpg" alt="profile-pic">
+        </div>
 
+        <div class="main" id="tws">
+            <h2>The Worlds Toughest Canoe Race, The Texas Water Safari</h2>
+            <p>
+                asdf
+            </p>
+            
+            <img id="tws-pic1" src="" alt="tws-pic1">
+        </div>
+
+        <div class="main" id="ss">
+            <h2>Current Side Project: Stock Sharingan</h2>
+            <p>
+                asdf
+            </p>
+        </div>
+
+        <div class="main" id="math">
+            <h2>My Math Review</h2>
+            <p>
+                asdf
+            </p>
+        </div>
+
+        <div class="right">
+            <h2>Right Panel</h2>
+            <p>
+                More cool info
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            Please see my <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/">LinkedIn</a> 
+            and <a href="https://github.com/XDwightsBeetsX">Github</a> 
+            or shoot me an <a href="mailto:gutierrezjohn2000@gmail.com">email</a>!
+        </p>
+    </div>
 </body>
+
 </html>
