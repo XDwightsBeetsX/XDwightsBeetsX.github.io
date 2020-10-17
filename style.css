@@ -52,9 +52,9 @@ body{
 
 .right{
     background-color:#e5e5e5;
-    float: left;
-    width: 20%;
-    padding: 15px;
+    float: right;
+    width: 15%;
+    padding: 7px 15px;
     margin-top: 7px;
     text-align: center;
 }
@@ -119,4 +119,19 @@ body{
 #embedded-mathdoc{
     width: 100%;
     height: 720px;
+}
+
+#connect-icons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.connect-icon{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 35%;
+    padding: 1%;
 }
