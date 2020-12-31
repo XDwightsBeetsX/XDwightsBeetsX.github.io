@@ -1,4 +1,4 @@
-var sections = ["main", "tws", "ss", "math"];
+var sections = ["main", "tws", "math", "engr", "cs"];
 
 function show(idToShow) {
     // Goes through all the sections, which are class names in menu
