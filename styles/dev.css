@@ -1,0 +1,35 @@
+/*==============================*/
+/*============ dev =============*/
+/*==============================*/
+.proj-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+.proj-wrapper > .proj-header {
+    line-height: 50px;
+    margin: 5px;
+    text-align: center;
+    font-size: medium;
+    font-family: Verdana;
+    color: gray;
+}
+.proj-img-wrapper {
+    margin: 0 50px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+.proj-img-wrapper > .proj-img-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 200px;
+    padding: 10px;
+}
+.proj-wrapper > .proj-description {
+    font-family: Verdana;
+    color: gray;
+}
