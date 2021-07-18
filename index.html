@@ -4,130 +4,74 @@
 <head>
     <meta charset="utf-8" description="basic web template">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="dynamic.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="./styles/shared.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
-    <div class="title">
-        <h1>Howdy! I'm John</h1>
-    </div>
-
-    <div id="content">
-        <div class="menu">
-            <a href="#" onclick="return show('main')">Bio</a>
-            <a href="#TWS" onclick="return show('tws')">The Worlds Toughest Canoe Race</a>
-            <a href="#Math" onclick="return show('math')">Math</a>
-            <a href="#Engr" onclick="return show('engr')">Engineering</a>
-            <a href="#CS" onclick="return show('cs')">Comp. Sci</a>
+    <div class="page-wrapper">
+        <!-- header -->
+        <div class="header-wrapper">
+            <div class="page-header">Howdy! I'm John</div>
         </div>
 
-        <div class="main default-main" id="main">
-            <h2>Bio I Guess...</h2>
-            <p>
-                My name is John Gutierrez, and I am the loudest and </b>proudest member of the 
-                fightin Texas Aggie class of '22 EY WHOOP!
-            </p>
-            <p>
-                I'm studying Mechanical Engineering, with a minor in Computer Science. I am 
-                passianate about applying a computational and robust computer science approach to 
-                mechanical engineering challenges.
-            </p>
-            <p>
-                I'm currently learning to write production level code for the A&M 
-                Engineering System Lab Compass site, a web page where clients analyze building HVAC data 
-                such as airflow, humidity, and temperatures. I got started writing 
-                python scripts in the past to help transition a government database 
-                away from Excel.
-            </p>
-            <img id="profile-pic" src="https://i.imgur.com/tFmLVam.jpg" alt="profile-pic">
-        </div>
-
-        <div class="main" id="tws">
-            <h2>
-                <a class="inconspicuous-link" href="https://www.texaswatersafari.org/">
-                    The Worlds Toughest Canoe Race, The Texas Water Safari</a>
-            </h2>
-            <div class="embedded-div">
-                <iframe id="embedded-tws"
-                src="https://www.youtube.com/embed/5npEus2-Wig?autoplay=1&mute=1?controls=0"
-                allowfullscreen="allowfullscreen"></iframe>
+        <!-- content -->
+        <div class="content-wrapper">
+            <!-- left -->
+            <div class="left-wrapper">
+                <a href="./index.html">Bio</a>
+                <a href="./content/tws.html">TWS</a>
+                <a href="./content/dev.html">Projects</a>
             </div>
-            <p>
-                Please check out YETI's "Shut Up and Paddle" video!
-            </p>
-            <p>
-                Team In Deep Ship finished the 2019 TWS in 58:12m, and were looking forward 
-                to setting a new best in 2020 until the coronavirus pandemic delayed 
-                the race until it was eventually cancelled. The race is 260 miles and the fastest teams finish in about 40 hours, 
-                depending on the year's water level and conditions.
-            </p>
-            <p>
-                John Bugge, a TWS legend, is well known for his racing canoes 
-                and we used his boats both years, putting them to the test as we 
-                scraped our way down the San Marcos and Guadalupe rivers in over 
-                300 miles of training each year.
-            </p>
-
-            <div id="tws-collage">
-                <div class="tws-photos">
-                    <img src="https://i.imgur.com/L0wlJVz.jpg">
-                    <img src="https://i.imgur.com/i6SiQX6.jpg">
-                    <img src="https://i.imgur.com/4ZZNMLn.jpg">
-                    <img src="https://i.imgur.com/pJqPqge.jpg">
+            
+            <!-- center content -->
+            <div class="center-wrapper">
+                <div class="center-content">
+                    <p>
+                        My name is John Gutierrez, and I am the loudest and proudest member of the 
+                        fightin Texas Aggie class of '22 EY WHOOP!
+                    </p>
+                    <p>
+                        I'm studying Mechanical Engineering, with a minor in Computer Science. I am 
+                        passianate about applying a computational and robust computer science approach to 
+                        mechanical engineering challenges.
+                    </p>
+                    <img id="profile-pic" src="./img/profile.jpg" alt="profile-pic">
+                    <p>
+                        I'm currently learning to write production level code for the A&M 
+                        Engineering System Lab Compass site, a web page where clients analyze building HVAC data 
+                        such as airflow, humidity, and temperatures. I got started writing 
+                        python scripts in the past to help transition a government database 
+                        away from Excel, but now I work on my own projects like learning web development 
+                        and other projects.
+                    </p>
+                    <p>
+                        I like to play soccer and tennis, and go hiking at state parks. 
+                        The last two years I've taken part in a canoe race known as the Texas Water Safari which has 
+                        been an amazing experience with my close friends. Check it out on the other page!
+                    </p>
                 </div>
             </div>
+
+            <!-- right -->
+            <div class="right-wrapper"></div>
         </div>
 
-        <div class="main" id="math">
-            <h2>Math</h2>
-            <p>
-                Please note this is a work in progress and gets updated periodically.
-            </p>
-            <div>
-                <iframe class="embedded-doc" src="https://docs.google.com/document/d/e/2PACX-1vRrph96m4TDaiAlfw21TtOSmqK-vZ48lhwKQUf8waURNLDDvnbBC-5m-NmqMUocTbI24u8mTJj12S7u/pub?embedded=true"></iframe>
+        <!-- footer -->
+        <div class="footer-wrapper">
+            <div class="link-icons">
+                <a href="mailto:gutierrezjohn2000@gmail.com">
+                    <img src="./img/gmail_icon.png">
+                </a>
+                <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/">
+                    <img src="./img/linkedin_icon.png">
+                </a>
+                <a href="https://github.com/XDwightsBeetsX">
+                    <img src="./img/github_icon.png">
+                </a>
             </div>
         </div>
-
-        <div class="main" id="engr">
-            <h2>Engineering</h2>
-            <div>
-                <iframe class="embedded-doc" src=""></iframe>
-            </div>
-        </div>
-
-        <div class="main" id="cs">
-            <h2>Computer Science</h2>
-            <div>
-                <iframe class="embedded-doc" src=""></iframe>
-            </div>
-        </div>
-
-        <div class="right">
-            <h3>Connect</h3>
-            <div id="connect_icons">
-              <a href="mailto:gutierrezjohn2000@gmail.com">
-                <img class="connect-icon" src="https://i.imgur.com/8ZWXJ1K.png">
-              </a>
-              <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/">
-                <img class="connect-icon" src="https://i.imgur.com/KOuhAjZ.png">
-              </a>
-              <a href="https://github.com/XDwightsBeetsX">
-                <img class="connect-icon" src="https://i.imgur.com/tuASS5G.png">
-              </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>
-            Please see my <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/">LinkedIn</a> 
-            and <a href="https://github.com/XDwightsBeetsX">Github</a> 
-            or shoot me an <a href="mailto:gutierrezjohn2000@gmail.com">email</a>!
-        </p>
     </div>
 </body>
 
