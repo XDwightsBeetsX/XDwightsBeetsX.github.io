@@ -29,6 +29,10 @@
     height: 200px;
     padding: 10px;
 }
+.proj-img-row > img {
+    margin: 0 5px 0 5px;
+}
+
 .proj-wrapper > .proj-description {
     font-family: Verdana;
     color: gray;
