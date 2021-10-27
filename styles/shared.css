@@ -1,7 +1,6 @@
 /*==============================*/
 /*========= Page Setup =========*/
 /*==============================*/
-
 *{
     box-sizing: border-box;
 }
@@ -104,6 +103,42 @@ p {
     background-color: lightgray;
 }
 
+/* SCHOOL DROPDOWN MENU */
+.dropdown {
+    padding: 0 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: none;
+
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    line-height: 30px;
+}
+.dropdown:hover .dropdown-item {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-item > a:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.dropdown-item {
+    display: none;
+    padding: 0 5px;
+    text-align: left;
+    font-family: Verdana;
+
+    background-color: #e5e5e5;
+    line-height: 30px;
+}
+.dropdown-item > a {
+    margin: 0 0 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 /*==============================*/
 /*=========== Right ============*/
@@ -127,16 +162,16 @@ p {
     color: gray;
 }
 
+.pdf {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
 
 /*==============================*/
 /*=========== Footer ===========*/
 /*==============================*/
-.footer-wrapper > .link-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5px;
-}
 .link-icons > a {
     width: 25px;
     height: 25px;
@@ -151,7 +186,19 @@ p {
 /*==============================*/
 /*====== Fonts and Styles ======*/
 /*==============================*/
+.lightgray-w-border {
+    color: gray;
+    border: 1px solid lightgray;
+}
+
 .verdana-gray {
     font-family: Verdana;
     color: gray;
+}
+
+.center-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
 }
