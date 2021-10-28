@@ -1,0 +1,39 @@
+/*==============================*/
+/*========== School ============*/
+/*==============================*/
+/* school dropdown */
+.school-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.school-content > iframe {
+    margin: 3px;
+}
+
+.school-dropdown {
+    display: flex;
+    flex-direction: column;
+
+    width: 15%;
+    height: fit-content;
+    margin: 3px;
+}
+.school-dropdown > .dropdown-item > a {
+    display: flex;
+    padding-left: 5px;
+    margin: 3px;
+
+    background-color: #e5e5e5;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    color: gray;
+    font-family: Verdana;
+    text-decoration: none;
+    line-height: 30px;
+}
+.school-dropdown > .dropdown-item > a:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}

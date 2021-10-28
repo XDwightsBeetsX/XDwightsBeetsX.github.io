@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="../../styles/shared.css">
     <link rel="stylesheet" href="../../styles/index.css">
+    <link rel="stylesheet" href="../../styles/school/school.css">
 </head>
 
 <body>
@@ -23,11 +24,13 @@
                 <a href="../../index.html">Bio</a>
                 <a href="../../content/tws.html">TWS</a>
                 <a href="../../content/dev.html">Projects</a>
-                <div class="dropdown lightgray-w-border" href="#">
+                <div class="dropdown" href="#">
                     <label>School</label>
-                    <div class="dropdown-item lightgray-w-border">
-                        <label>Fall 2021</label>
-                        <a href="./engr482.html">ENGR 482</a>
+                    <div class="dropdown-item">
+                        <div class="dropdown-item-content">
+                            <label>Fall 2021</label>
+                            <a href="./engr482.html">ENGR 482</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,16 +38,19 @@
             <!-- center content -->
             <div class="center-wrapper">
                 <div class="center-content">
-                    <div class="dropdown file-menu">
-                        <label>Courses</label>
-                        <div class="dropdown-item lightgray-w-border">
+                    <div class="school-content">
+                        <div class="dropdown school-dropdown">
                             <label>ENGR 482</label>
-                        </div><div class="dropdown-item lightgray-w-border">
-                            <label>ENGR 482</label>
+                            <div class="dropdown-item">
+                                <a id="engr482-intro">Intro</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-risk">Risk Ethics</a>
+                            </div>
                         </div>
+    
+                        <iframe class="pdf" src="https://drive.google.com/file/d/1rmZmerfscKBB64uYRlvPzrgy9G8Ph7p8/preview" allow="autoplay"></iframe>
                     </div>
-
-                    <iframe class="pdf" src="https://drive.google.com/file/d/1rmZmerfscKBB64uYRlvPzrgy9G8Ph7p8/preview" allow="autoplay"></iframe>
                 </div>
             </div>
 

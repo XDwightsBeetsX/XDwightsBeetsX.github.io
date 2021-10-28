@@ -39,19 +39,19 @@ p {
 .left-wrapper {
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 14%;
     margin: 5px;
 }
 .center-wrapper {
     display: flex;
     flex-direction: column;
-    width: 64%;
+    width: 78%;
     margin: 5px;
 }
 .right-wrapper {
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 12%;
     margin: 5px;
 }
 .footer-wrapper {
@@ -85,59 +85,82 @@ p {
 /*==============================*/
 /*============ Left ============*/
 /*==============================*/
+.left-wrapper > div,
 .left-wrapper > a {
-    padding: 0 5px;
-    margin-bottom: 5px;
-    text-align: center;
-    font-family: Verdana;
-    text-decoration: none;
-    color: gray;
+    width: 100%;
+    margin: 3px;
 
+    color: gray;
     background-color: #e5e5e5;
     border: 1px solid lightgray;
     border-radius: 5px;
+
     line-height: 30px;
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: none;
 }
+.left-wrapper > div:hover,
 .left-wrapper > a:hover {
     cursor: pointer;
     background-color: lightgray;
 }
 
-/* SCHOOL DROPDOWN MENU */
+/* DROPDOWN MENU */
 .dropdown {
-    padding: 0 5px;
-    margin-bottom: 5px;
+    width: 100%;
+
+    color: gray;
+    background-color: #e5e5e5;
+    
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
     text-align: center;
     font-family: Verdana;
     text-decoration: none;
-
-    background-color: #e5e5e5;
-    border-radius: 5px;
     line-height: 30px;
-}
-.dropdown:hover .dropdown-item {
-    display: flex;
-    flex-direction: column;
-}
-.dropdown-item > a:hover {
-    cursor: pointer;
-    background-color: lightgray;
 }
 
 .dropdown-item {
     display: none;
-    padding: 0 5px;
+}
+.dropdown:hover .dropdown-item {
+    display: block;
+}
+
+.dropdown-item-content {
+    display: flex;
+    flex-direction: column;
+
+    margin: 3px;
+    padding-left: 5px;
+
+    color: gray;
+    background-color: #e5e5e5;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
     text-align: left;
-    font-family: Verdana;
+    text-decoration: none;
+}
+
+.dropdown-item-content > a {
+    padding-left: 5px;
+    margin: 3px;
 
     background-color: #e5e5e5;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    color: gray;
+    font-family: Verdana;
+    text-decoration: none;
     line-height: 30px;
 }
-.dropdown-item > a {
-    margin: 0 0 5px 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
+.dropdown-item-content > a:hover {
+    cursor: pointer;
+    background-color: lightgray;
 }
 
 /*==============================*/
@@ -186,11 +209,6 @@ p {
 /*==============================*/
 /*====== Fonts and Styles ======*/
 /*==============================*/
-.lightgray-w-border {
-    color: gray;
-    border: 1px solid lightgray;
-}
-
 .verdana-gray {
     font-family: Verdana;
     color: gray;
