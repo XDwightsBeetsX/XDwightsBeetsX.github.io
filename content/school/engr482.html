@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../styles/shared.css">
     <link rel="stylesheet" href="../../styles/index.css">
     <link rel="stylesheet" href="../../styles/school/school.css">
+
+    <script src="../../js/school/engr482.js"></script>
 </head>
 
 <body>
@@ -43,14 +45,38 @@
                         <div class="dropdown school-dropdown">
                             <label>ENGR 482</label>
                             <div class="dropdown-item">
-                                <a id="engr482-intro">Intro</a>
+                                <a id="engr482-intro" onclick="loadDoc(this.id)">Intro</a>
                             </div>
                             <div class="dropdown-item">
-                                <a id="engr482-risk">Risk Ethics</a>
+                                <a id="engr482-utilitarianism" onclick="loadDoc(this.id)">Utilitarianism</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-kantianism" onclick="loadDoc(this.id)">Kantianism</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-aspirational" onclick="loadDoc(this.id)">Aspirational</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="virtue" onclick="loadDoc(this.id)">Virtue</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-risk" onclick="loadDoc(this.id)">Risk</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-company_culture" onclick="loadDoc(this.id)">Company Culture</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-impediments" onclick="loadDoc(this.id)">Impediments</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-professionalism" onclick="loadDoc(this.id)">Professionalism</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a id="engr482-artifacts" onclick="loadDoc(this.id)">Artifacts</a>
                             </div>
                         </div>
     
-                        <iframe class="pdf" src="https://github.com/XDwightsBeetsX/XDwightsBeetsX.github.io/tree/master/assets/school/engr482/1-intro"></iframe>
+                        <iframe id="engr482" class="pdf" src=""></iframe>
                     </div>
                 </div>
             </div>
