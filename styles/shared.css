@@ -1,7 +1,6 @@
 /*==============================*/
 /*========= Page Setup =========*/
 /*==============================*/
-
 *{
     box-sizing: border-box;
 }
@@ -40,19 +39,19 @@ p {
 .left-wrapper {
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 14%;
     margin: 5px;
 }
 .center-wrapper {
     display: flex;
     flex-direction: column;
-    width: 64%;
+    width: 78%;
     margin: 5px;
 }
 .right-wrapper {
     display: flex;
     flex-direction: column;
-    width: 18%;
+    width: 12%;
     margin: 5px;
 }
 .footer-wrapper {
@@ -86,24 +85,83 @@ p {
 /*==============================*/
 /*============ Left ============*/
 /*==============================*/
+.left-wrapper > div,
 .left-wrapper > a {
-    padding: 0 5px;
-    margin-bottom: 5px;
-    text-align: center;
-    font-family: Verdana;
-    text-decoration: none;
-    color: gray;
+    width: 100%;
+    margin: 3px;
 
+    color: gray;
     background-color: #e5e5e5;
     border: 1px solid lightgray;
     border-radius: 5px;
+
     line-height: 30px;
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: none;
 }
+.left-wrapper > div:hover,
 .left-wrapper > a:hover {
     cursor: pointer;
     background-color: lightgray;
 }
 
+/* DROPDOWN MENU */
+.dropdown {
+    width: 100%;
+
+    color: gray;
+    background-color: #e5e5e5;
+    
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.dropdown-item {
+    display: none;
+}
+.dropdown:hover .dropdown-item {
+    display: block;
+}
+
+.dropdown-item-content {
+    display: flex;
+    flex-direction: column;
+
+    margin: 3px;
+    padding-left: 5px;
+
+    color: gray;
+    background-color: #e5e5e5;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    text-align: left;
+    text-decoration: none;
+}
+
+.dropdown-item-content > a {
+    padding-left: 5px;
+    margin: 3px;
+
+    background-color: #e5e5e5;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    color: gray;
+    font-family: Verdana;
+    text-decoration: none;
+    line-height: 30px;
+}
+.dropdown-item-content > a:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
 
 /*==============================*/
 /*=========== Right ============*/
@@ -127,16 +185,16 @@ p {
     color: gray;
 }
 
+.pdf {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
 
 /*==============================*/
 /*=========== Footer ===========*/
 /*==============================*/
-.footer-wrapper > .link-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5px;
-}
 .link-icons > a {
     width: 25px;
     height: 25px;
@@ -154,4 +212,11 @@ p {
 .verdana-gray {
     font-family: Verdana;
     color: gray;
+}
+
+.center-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
 }

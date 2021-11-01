@@ -29,6 +29,14 @@
     height: 200px;
     padding: 10px;
 }
+.proj-img-row > img {
+    height: auto;
+    width: auto;
+    max-width: 33%;
+    max-height: 100%;
+    margin: 0 5px 0 5px;
+}
+
 .proj-wrapper > .proj-description {
     font-family: Verdana;
     color: gray;
