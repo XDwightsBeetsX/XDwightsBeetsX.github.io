@@ -37,6 +37,9 @@ function loadDoc(docId) {
         case "artifacts":
             url = "https://drive.google.com/file/d/1V8Y1-a1fjOBYbTvelhzUMEcnOp6cnQiz/preview";
             break;
+        case "ellul":
+            url = "https://drive.google.com/file/d/1jHS2C1L1hRjAbjvyFEybt4qp-AKoaYFT/preview";
+            break;
         default:
             url = "https://drive.google.com/file/d/1rmZmerfscKBB64uYRlvPzrgy9G8Ph7p8/preview";
             break;
