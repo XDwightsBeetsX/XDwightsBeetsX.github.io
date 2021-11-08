@@ -40,6 +40,9 @@ function loadDoc(docId) {
         case "ellul":
             url = "https://drive.google.com/file/d/1jHS2C1L1hRjAbjvyFEybt4qp-AKoaYFT/preview";
             break;
+        case "environment":
+            url = "https://drive.google.com/file/d/18CE37YI7qrhs23ynwXrxRe2ZzEdeUhIm/preview";
+            break;
         default:
             url = "https://drive.google.com/file/d/1rmZmerfscKBB64uYRlvPzrgy9G8Ph7p8/preview";
             break;
