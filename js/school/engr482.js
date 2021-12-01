@@ -43,6 +43,12 @@ function loadDoc(docId) {
         case "environment":
             url = "https://drive.google.com/file/d/18CE37YI7qrhs23ynwXrxRe2ZzEdeUhIm/preview";
             break;
+        case "international":
+            url = "https://drive.google.com/file/d/1EhujsmRtPAJNWDSKViOs4toRXkY70NwW/preview";
+            break;
+        case "privacy":
+            url="https://drive.google.com/file/d/14q8p7aiE01KDPv9rd9kpFls_eBeapNAv/preview";
+            break;
         default:
             url = "https://drive.google.com/file/d/1rmZmerfscKBB64uYRlvPzrgy9G8Ph7p8/preview";
             break;
