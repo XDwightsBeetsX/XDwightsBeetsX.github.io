@@ -50,7 +50,7 @@ function loadDoc(docId) {
             url="https://drive.google.com/file/d/14q8p7aiE01KDPv9rd9kpFls_eBeapNAv/preview";
             break;
         default:
-            url = "https://drive.google.com/file/d/1rmZmerfscKBB64uYRlvPzrgy9G8Ph7p8/preview";
+            url = "https://drive.google.com/file/d/1j6D5leBob4RYfDST90ivdDmOQRPXcgxK/preview";
             break;
     }
 
