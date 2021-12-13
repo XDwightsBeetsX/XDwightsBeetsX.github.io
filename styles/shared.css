@@ -128,6 +128,9 @@ p {
 .dropdown:hover .dropdown-item {
     display: block;
 }
+.dropdown:click .dropdown-item {
+    display: block;
+}
 
 .dropdown-item-content {
     display: flex;
