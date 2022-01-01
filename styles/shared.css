@@ -39,7 +39,7 @@ p {
 .left-wrapper {
     display: flex;
     flex-direction: column;
-    width: 14%;
+    width: 16%;
     margin: 5px;
 }
 .center-wrapper {
@@ -51,7 +51,7 @@ p {
 .right-wrapper {
     display: flex;
     flex-direction: column;
-    width: 12%;
+    width: 6%;
     margin: 5px;
 }
 .footer-wrapper {
