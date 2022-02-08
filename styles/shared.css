@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 p {
-    margin-left: 30px;
+    margin: 5px 0 5px 30px;
     padding: 5px 0;
 }
 
@@ -222,4 +222,12 @@ p {
     flex-direction: row;
     justify-content: center;
     padding: 5px;
+}
+
+.gray-link {
+    font-family: Verdana;
+    color: gray;
+}
+.gray-link:hover {
+    cursor: pointer;
 }
