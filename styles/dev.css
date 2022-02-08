@@ -1,43 +1,79 @@
 /*==============================*/
 /*============ dev =============*/
 /*==============================*/
+/* Handles entire array of projects */
 .proj-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+
     width: 100%;
-    margin-bottom: 20px;
+}
+
+/* Format Each Project */
+.proj-wrapper > .proj {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: auto;
+    margin: 5px 0 5px 0;
+
     background-color: #e5e5e5;
     border-radius: 5px;
 }
-.proj-wrapper > .proj-header {
+
+.proj > .info {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;  /* match with the right side: imgs */
+}
+.proj > .info > .header {
     line-height: 50px;
     margin: 5px;
+
     text-align: center;
-    font-size: medium;
+    text-decoration: underline;
+}
+.proj > .info > .header > a {
+    font-size: 16pt;
+    font-family: Verdana;
+    
+    color: gray;
+}
+.proj > .info > .header > a:hover {
+    cursor: pointer;
+}
+.proj > .info > .description {
+    padding: 5px;
+    
     font-family: Verdana;
     color: gray;
 }
-.proj-img-wrapper {
-    margin: 0 50px;
+.proj > .imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 50%;  /* match with the left side: info */
+    padding: 10px;
+    margin: 10px;
+
     border-radius: 5px;
     background-color: lightgray;
 }
-.proj-img-wrapper > .proj-img-row {
+.proj > .imgs > .img-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    
     height: 200px;
-    padding: 10px;
+    margin: 5px 0 5px 0;
 }
-.proj-img-row > img {
-    height: auto;
+.proj > .imgs > .img-row > img {
+    height: 100%;
     width: auto;
-    max-width: 33%;
-    max-height: 100%;
     margin: 0 5px 0 5px;
-}
-
-.proj-wrapper > .proj-description {
-    font-family: Verdana;
-    color: gray;
 }

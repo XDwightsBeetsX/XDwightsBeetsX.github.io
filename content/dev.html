@@ -62,59 +62,141 @@
                 <div class="center-content">
                     <div class="proj-wrapper">
 
-                        <div class="proj-header">Tournament Brackets</div>
-                        
-                        <a class="proj-img-wrapper" href="https://xdwightsbeetsx.github.io/tournament-bracket/" target="_blank">
-                            <div class="proj-img-row">
-                                <img src="../img/dev-tournament-bracket.png" title="tournament-bracket" alt="tournament-bracket">
+                        <div class="proj">
+                            <div class="info">
+                                <div class="header">
+                                    <a href="https://github.com/XDwightsBeetsX/beam-analysis" target="_blank">Beam Analysis</a>
+                                </div>
+
+                                <div class="description">
+                                    <p>
+                                        I wrote a beam analysis package in python to do my engineering homework for me, 
+                                        but ended up actually learning the material instead.
+                                    </p>
+                                    <p>
+                                        The code implements the double-integration method of the beam moment equation.
+                                        This allowed for the resultant force, moment, angle, and deflection at any point in the beam to be solved given proper boundary conditions. 
+                                        Running the program shows plots for all these variables, and gives the maximum stress and location.
+                                    </p>    
+                                    <p>
+                                        I've gone back and updated the package to do some cool new things:
+                                        <ul>
+                                            <li>Tracking of parameters in XY and XZ planes</li>
+                                            <li>3D modelling of the deflection using matplotlib</li>
+                                            <li>Generate a report with information from the analysis</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        You can get this from the PYPI package manager 
+                                        <a class="verdana-gray" href="https://pypi.org/project/beam-analysis/" target="_blank">here</a>!
+                                    </p>
+                                </div>
                             </div>
-                        </a>
-                        
-                        <div class="proj-description">
-                            <p>
-                                I wrote a <a href="https://xdwightsbeetsx.github.io/tournament-bracket/" target="_blank">tournament bracket maker</a> for dye tournaments,
-                                but it can be used for all kinds of things.
-                            </p>
+                            
+                            <div class="imgs">
+                                <div class="img-row">
+                                    <img src="../img/beam_analysis_cantilever.png" title="Cantilever Beam" alt="Cantilever Beam">
+                                </div>
+                                <div class="img-row">
+                                    <img src="../img/beam_analysis_fixed.png" title="Fixed-Support Beam" alt="Fixed-Support Beam">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="info">
+                                <div class="header">
+                                    <a href="https://github.com/XDwightsBeetsX/topography" target="_blank">Topography</a>
+                                </div>
+                                
+                                <div class="description">
+                                    <p>
+                                        I wrote a topography package in python mostly for the heck of it,
+                                        but learned some cool stuff on the way and published it to 
+                                        <a class="verdana-gray" href="https://pypi.org/project/topography/" target="_blank">PYPI</a> 
+                                        too!
+                                    </p>
+                                    <p>
+                                        Things I'll try and work on in my free time for this:
+                                        <ul>
+                                            <li>bilinear interpolation</li>
+                                            <li>bicubic interpolation</li>
+                                            <li>terrain generation with perlin or simplex noise</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="imgs" href="https://github.com/XDwightsBeetsX/topography" target="_blank">
+                                <div class="img-row">
+                                    <img src="../img/dev-topography-graph.png" title="topography-graph" alt="topography-graph">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="info">
+                                <div class="header">
+                                    <a href="https://github.com/XDwightsBeetsX/sudoku" target="_blank">Sudoku Solver</a>
+                                </div>
+                                
+                                <div class="description">
+                                    <p>
+                                        I got down and dirty with C++ again to make a sudoku solver. 
+                                        This was a good refresher in C++ and using make since I tend to forget the little details that come up in low-level languages.
+                                    </p>
+                                    <p>
+                                        This turned out pretty well, but I'm going to add some things to scale things up a bit:
+                                        <ul>
+                                            <li>Sudoku puzzle generation</li>
+                                            <li>Solve all sudoku puzzles in a given folder</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="imgs" href="https://github.com/XDwightsBeetsX/topography" target="_blank">
+                                <div class="img-row">
+                                    <img src="../img/sudoku_puzzle.png" title="Sudoku Puzzle" alt="Sudoku Puzzle">
+                                    <img src="../img/sudoku_solution.png" title="Sudoku Solution" alt="Sudoku Solution">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="info">
+                                <div class="header">
+                                    <a href="https://github.com/XDwightsBeetsX/tournament-bracket" target="_blank">
+                                        Tournament Bracket Maker
+                                    </a>
+                                </div>
+
+                                <div class="description">
+                                    <p>
+                                        I wrote a tournament bracket generator for dye tournaments,
+                                        but it can be used for all kinds of things!
+                                    </p>
+                                    <p>
+                                        This project is working well, but down the road I hope to add some features:
+                                        <ul>
+                                            <li>.csv download & upload</li>
+                                            <li>cooler site design</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Check out the website 
+                                        <a class="verdana-gray" href="https://github.com/XDwightsBeetsX/tournament-bracket" target="_blank">here</a>!
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="imgs">
+                                <div class="img-row">
+                                    <img src="../img/dev-tournament-bracket.png" title="tournament-bracket" alt="tournament-bracket">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="proj-wrapper">
-                        <div class="proj-header">Beam Analysis</div>
-                        
-                        <a class="proj-img-wrapper" href="https://github.com/XDwightsBeetsX/beam_analysis" target="_blank">
-                            <div class="proj-img-row">
-                                <img src="../img/dev-beam-analysis-code.png" title="beam-analysis-code" alt="beam-analysis-code">
-                                <img src="../img/dev-beam-analysis-graphs.png" title="beam-analysis-graphs" alt="beam-analysis-graphs">
-                                <img src="../img/dev-beam-analysis-report.png" title="dev-beam-analysis-report" alt="dev-beam-analysis-report">
-                            </div>
-                        </a>
-                        
-                        <div class="proj-description">
-                            <p>
-                                I wrote a <a href="https://pypi.org/project/beam-analysis/" target="_blank">beam analysis package</a> in python to help with my engineering homework.
-                                This might be useful to other students...
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="proj-wrapper">
-                        <div class="proj-header">Topography</div>
-                        
-                        <a class="proj-img-wrapper" href="https://github.com/XDwightsBeetsX/topography" target="_blank">
-                            <div class="proj-img-row">
-                                <img src="../img/dev-topography-code.png" title="topography-code" alt="topography-code">
-                                <img src="../img/dev-topography-graph.png" title="topography-graph" alt="topography-graph">
-                            </div>
-                        </a>
-                        
-                        <div class="proj-description">
-                            <p>
-                                I wrote a <a href="https://pypi.org/project/topography/" target="_blank">topography package</a> in python mostly for the heck of it,
-                                but learned some cool stuff on the way.
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
