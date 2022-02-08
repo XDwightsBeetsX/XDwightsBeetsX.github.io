@@ -43,7 +43,7 @@
     
     color: gray;
 }
-.proj > .info > .header:hover {
+.proj > .info > .header > a:hover {
     cursor: pointer;
 }
 .proj > .info > .description {

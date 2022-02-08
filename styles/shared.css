@@ -18,6 +18,9 @@ p {
     margin: 5px 0 5px 30px;
     padding: 5px 0;
 }
+a:hover {
+    cursor: pointer;
+}
 
 
 /*==============================*/
@@ -80,6 +83,9 @@ p {
     color: gray;
     text-decoration: none;
 }
+.page-header > a:hover {
+    text-decoration: underline;
+}
 
 
 /*==============================*/
@@ -102,7 +108,6 @@ p {
 }
 .left-wrapper > div:hover,
 .left-wrapper > a:hover {
-    cursor: pointer;
     background-color: lightgray;
 }
 
@@ -162,7 +167,6 @@ p {
     line-height: 30px;
 }
 .dropdown-item-content > a:hover {
-    cursor: pointer;
     background-color: lightgray;
 }
 
@@ -222,12 +226,4 @@ p {
     flex-direction: row;
     justify-content: center;
     padding: 5px;
-}
-
-.gray-link {
-    font-family: Verdana;
-    color: gray;
-}
-.gray-link:hover {
-    cursor: pointer;
 }
