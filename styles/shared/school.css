@@ -1,0 +1,20 @@
+/* adjust wrappers to fit right menus */
+.center-wrapper {
+    width: 67%;
+}
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    margin: 5px;
+}
+
+
+.school-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.school-content > iframe {
+    margin: 3px;
+}

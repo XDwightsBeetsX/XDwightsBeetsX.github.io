@@ -7,8 +7,9 @@
     <meta charset="utf-8" description="fire">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../styles/shared.css">
-    <link rel="stylesheet" href="../styles/dev.css">
+    <link rel="stylesheet" href="../styles/shared/layout.css">
+    <link rel="stylesheet" href="../styles/shared/dropdown.css">
+    <link rel="stylesheet" href="../styles/shared/school-menu-dropdown.css">
 </head>
 
 <body>
@@ -24,35 +25,25 @@
         <div class="content-wrapper">
             <!-- left -->
             <div class="left-wrapper">
-                <a href="../index.html">Bio</a>
-                <a href="../content/resume.html">Resume</a>
-                <a href="../content/dev.html">Projects</a>
-                <a href="../content/tws.html">Texas Water Safari</a>
-                <a href="../content/fire.html">We Didn't Start the Fire</a>
-                <div class="dropdown" href="#">
-                    <label>School</label>
-                    <div class="dropdown-item">
-                        <div class="dropdown-item-content">
-                            <label>Fall 2018</label>
-                            <a href="../content/school/pols207.html">POLS 207</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Spring 2021</label>
-                            <a href="../content/school/meen368.html">MEEN 368</a>
-                        </div>
+                <div class="dropdown">
+                    <div class="dropdown-items">
+                        <a href="../index.html">About Me</a>
+                        <a href="../content/tws.html">Texas Water Safari</a>
+                        <a href="../content/dev.html">Projects</a>
+                        <a href="../content/fire.html">We Didn't Start the Fire</a>
+                        <a href="../content/resume.html">Resume</a>
+                    </div>
+                </div>
 
-                        <div class="dropdown-item-content">
-                            <label>Fall 2021</label>
-                            <a href="../content/school/meen404.html">MEEN 404</a>
-                            <a href="../content/school/engr482.html">ENGR 482</a>
-                            <a href="../content/school/csce312.html">CSCE 312</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Other</label>
-                            <a href="../content/school/math-review.html">Math Review</a>
-                        </div>
+                <div id="school-menu-dropdown" class="dropdown" href="#">
+                    <label>School</label>
+                    <div class="dropdown-items">
+                        <a href="../content/school/pols207.html">POLS 207</a>
+                        <a href="../content/school/meen368.html">MEEN 368</a>
+                        <a href="../content/school/meen404.html">MEEN 404</a>
+                        <a href="../content/school/engr482.html">ENGR 482</a>
+                        <a href="../content/school/csce312.html">CSCE 312</a>
+                        <a href="../content/school/math-review.html">Math Review</a>
                     </div>
                 </div>
             </div>
@@ -63,9 +54,6 @@
                     <iframe class="pdf" src="https://drive.google.com/file/d/1Q1j7ycr0X2crGt8DBUDgu6Dt1ApZejZo/preview"></iframe>
                 </div>
             </div>
-
-            <!-- right -->
-            <div class="right-wrapper"></div>
         </div>
 
         <!-- footer -->

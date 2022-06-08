@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Bio</title>
+    <title>About Me</title>
 
     <meta charset="utf-8" description="bio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./styles/shared.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/shared/layout.css">
+    <link rel="stylesheet" href="./styles/shared/dropdown.css">
+    <link rel="stylesheet" href="./styles/shared/school-menu-dropdown.css">
+    
+    <link rel="stylesheet" href="./styles/pages/index.css">
 </head>
 
 <body>
@@ -22,35 +25,25 @@
         <div class="content-wrapper">
             <!-- left -->
             <div class="left-wrapper">
-                <a href="./index.html">Bio</a>
-                <a href="./content/resume.html">Resume</a>
-                <a href="./content/dev.html">Projects</a>
-                <a href="./content/tws.html">Texas Water Safari</a>
-                <a href="./content/fire.html">We Didn't Start the Fire</a>
-                <div class="dropdown" href="#">
+                <div class="dropdown">
+                    <div class="dropdown-items">
+                        <a href="./index.html">About Me</a>
+                        <a href="./content/tws.html">Texas Water Safari</a>
+                        <a href="./content/dev.html">Projects</a>
+                        <a href="./content/fire.html">We Didn't Start the Fire</a>
+                        <a href="./content/resume.html">Resume</a>
+                    </div>
+                </div>
+
+                <div id="school-menu-dropdown" class="dropdown" href="#">
                     <label>School</label>
-                    <div class="dropdown-item">
-                        <div class="dropdown-item-content">
-                            <label>Fall 2018</label>
-                            <a href="./content/school/pols207.html">POLS 207</a>
-                        </div>
-
-                        <div class="dropdown-item-content">
-                            <label>Spring 2021</label>
-                            <a href="./content/school/meen368.html">MEEN 368</a>
-                        </div>
-
-                        <div class="dropdown-item-content">
-                            <label>Fall 2021</label>
-                            <a href="./content/school/meen404.html">MEEN 404</a>
-                            <a href="./content/school/engr482.html">ENGR 482</a>
-                            <a href="./content/school/csce312.html">CSCE 312</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Other</label>
-                            <a href="./content/school/math-review.html">Math Review</a>
-                        </div>
+                    <div class="dropdown-items">
+                        <a href="./content/school/pols207.html">POLS 207</a>
+                        <a href="./content/school/meen368.html">MEEN 368</a>
+                        <a href="./content/school/meen404.html">MEEN 404</a>
+                        <a href="./content/school/engr482.html">ENGR 482</a>
+                        <a href="./content/school/csce312.html">CSCE 312</a>
+                        <a href="./content/school/math-review.html">Math Review</a>
                     </div>
                 </div>
             </div>
@@ -59,33 +52,26 @@
             <div class="center-wrapper">
                 <div class="center-content">
                     <p>
-                        My name is John Gutierrez, and I am the loudest and proudest member of the 
-                        fightin Texas Aggie class of '22 EY WHOOP!
-                    </p>
-                    <p>
-                        I'm studying Mechanical Engineering, with a minor in Computer Science. I am 
-                        passianate about applying a computational and robust computer science approach to 
-                        mechanical engineering challenges.
-                    </p>
-                    <img id="profile-pic" src="./img/profile.jpg" alt="profile-pic">
-                    <p>
-                        I'm currently learning to write production level code for the A&M 
-                        Engineering System Lab Compass site, a web page where clients analyze building HVAC data 
-                        such as airflow, humidity, and temperatures. I got started writing 
-                        python scripts in the past to help transition a government database 
-                        away from Excel, but now I work on my own projects like web development an python modules
-                        including beam analysis, and topography interpolation mapping.
-                    </p>
-                    <p>
-                        I like to play soccer and tennis, and go hiking at state parks. 
-                        The last two years I've taken part in a canoe race known as the Texas Water Safari which has 
-                        been an amazing experience with my close friends. Check it out on the other page!
+                        <img id="profile-pic" src="./img/profile.jpg" alt="profile-pic">
+                        Hi! I'm John! I recently graduated from Texas A&M with a Bachelor's in Mechanical Engineering and a Minor in Computer Science.
+                        Now I'm moving on to Consulting with Deloitte in their Government and Public Services Department!
+                        <br><br>
+                        During my time at A&M, I worked for the <a href="https://esl.tamu.edu/">Engineering Systems Lab</a> under the 
+                        <a href="https://esl.tamu.edu/cc/">Continuous Commissioning</a> program as a part of the <a href="https://tees.tamu.edu/">Texas A&M Energy Experiment Station</a>.
+                        This software development team works to maintain the <a href="https://cc-compass.tamu.edu/">Compass</a> site to help companies analyze their HVAC performance.
+                        Learning to program on a commercial level taught me a lot about user experience, testing, and ensuring my thought process (and code) is robust.
+                        <br><br>
+                        I got started writing code when I decided to learn python for a side job helping transition a government database 
+                        away from Excel. Now I work on some of my own personal side-projects, you can check some of them out on the other page <a href="./content/dev.html">here</a>!
+                        <br><br>
+                        I love to play all the sports, even if I'm terrible, but soccer and tennis have gotta be my favorites!
+                        I also like hiking and camping at national and state parks! 
+                        <br><br>
+                        The last few years I've taken part in a canoe race known as the Texas Water Safari which has 
+                        been an amazing experience with my close friends. I have a short page on it <a href="./content/tws.html">here</a>.
                     </p>
                 </div>
             </div>
-
-            <!-- right -->
-            <div class="right-wrapper"></div>
         </div>
 
         <!-- footer -->

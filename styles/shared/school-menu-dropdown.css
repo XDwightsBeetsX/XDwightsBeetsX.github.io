@@ -1,0 +1,14 @@
+/*==============================*/
+/*==== SCHOOL DROPDOWN MENU ====*/
+/*==============================*/
+
+#school-menu-dropdown {
+    margin-top: 15px;
+}
+#school-menu-dropdown > .dropdown-items {
+    padding-left: 20px;
+}
+#school-menu-dropdown > .dropdown-items > a {
+    margin: 3px;
+    line-height: 25px;
+}

@@ -1,0 +1,59 @@
+/*==============================*/
+/*======= Dropdown Menu ========*/
+/*==============================*/
+
+/*
+<div class="dropdown">
+	<label>Title</label>
+	<div class="dropdown-items">
+		<a></a>
+	</div>
+</div>
+*/
+
+/*
+w/ id:
+- specify width/height
+- override colors / spacing...
+*/
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+	
+	width: 100%;
+	height: fit-content;
+
+	background-color: #e5e5e5;
+    border-radius: 5px;
+}
+.dropdown > label {
+	padding-left: 10px;
+	color: gray;
+
+    font-family: Verdana;
+    line-height: 40px;
+}
+.dropdown > .dropdown-items {
+    display: flex;
+	flex-direction: column;
+}
+
+.dropdown-items > a {
+	margin: 5px;
+	padding: 2px 2px 2px 5px;
+
+	color: gray;
+	background-color: #e5e5e5;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+	text-align: left;
+    font-family: Verdana;
+    text-decoration: none;
+    line-height: 30px;
+}
+.dropdown-items > a:hover {
+	cursor: pointer;
+	background-color: lightgray;
+}

@@ -7,11 +7,12 @@
     <meta charset="utf-8" description="meen404">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../../styles/shared.css">
-    <link rel="stylesheet" href="../../styles/index.css">
-    <link rel="stylesheet" href="../../styles/school/school.css">
+    <link rel="stylesheet" href="../../styles/shared/layout.css">
+    <link rel="stylesheet" href="../../styles/shared/dropdown.css">
+    <link rel="stylesheet" href="../../styles/shared/school-menu-dropdown.css">
+    <link rel="stylesheet" href="../../styles/shared/school.css">
 
-    <script src="../../js/school/meen404.js"></script>
+    <script src="../../js/pages/school/meen404.js"></script>
 </head>
 
 <body>
@@ -25,35 +26,25 @@
         <div class="content-wrapper">
             <!-- left -->
             <div class="left-wrapper">
-                <a href="../../index.html">Bio</a>
-                <a href="../../content/resume.html">Resume</a>
-                <a href="../../content/dev.html">Projects</a>
-                <a href="../../content/tws.html">Texas Water Safari</a>
-                <a href="../../content/fire.html">We Didn't Start the Fire</a>
-                <div class="dropdown" href="#">
-                    <label>School</label>
-                    <div class="dropdown-item">
-                        <div class="dropdown-item-content">
-                            <label>Fall 2018</label>
-                            <a href="../school/pols207.html">POLS 207</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Spring 2021</label>
-                            <a href="../school/meen368.html">MEEN 368</a>
-                        </div>
+                <div class="dropdown">
+                    <div class="dropdown-items">
+                        <a href="../../index.html">About Me</a>
+                        <a href="../../content/resume.html">Resume</a>
+                        <a href="../../content/dev.html">Projects</a>
+                        <a href="../../content/tws.html">Texas Water Safari</a>
+                        <a href="../../content/fire.html">We Didn't Start the Fire</a>
+                    </div>
+                </div>
 
-                        <div class="dropdown-item-content">
-                            <label>Fall 2021</label>
-                            <a href="../school/meen404.html">MEEN 404</a>
-                            <a href="../school/engr482.html">ENGR 482</a>
-                            <a href="../school/csce312.html">CSCE 312</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Other</label>
-                            <a href="../school/math-review.html">Math Review</a>
-                        </div>
+                <div id="school-menu-dropdown" class="dropdown" href="#">
+                    <label>School</label>
+                    <div class="dropdown-items">
+                        <a href="../../content/school/pols207.html">POLS 207</a>
+                        <a href="../../content/school/meen368.html">MEEN 368</a>
+                        <a href="../../content/school/meen404.html">MEEN 404</a>
+                        <a href="../../content/school/engr482.html">ENGR 482</a>
+                        <a href="../../content/school/csce312.html">CSCE 312</a>
+                        <a href="../../content/school/math-review.html">Math Review</a>
                     </div>
                 </div>
             </div>
@@ -62,26 +53,22 @@
             <div class="center-wrapper">
                 <div class="center-content">
                     <div class="school-content">
-                        <div class="dropdown school-dropdown">
-                            <label>Experiments</label>
-                            <div class="dropdown-item">
-                                <a id="meen404-exp1" onclick="loadDoc(this.id)">1. Composite Strength</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="meen404-exp2" onclick="loadDoc(this.id)">2. Static Friction</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="meen404-exp3" onclick="loadDoc(this.id)">3. Oobleck Viscosity</a>
-                            </div>
-                        </div>
-    
                         <iframe id="meen404" class="pdf" src="https://drive.google.com/file/d/11WYGZeUxzuOumWDA0PH0R5L71eDTgSu6/preview"></iframe>
                     </div>
                 </div>
             </div>
 
             <!-- right -->
-            <!-- <div class="right-wrapper"></div> -->
+            <div class="right-wrapper">
+                <div class="dropdown school-dropdown">
+                    <label>MEEN 404 Experiments</label>
+                    <div class="dropdown-items">
+                        <a id="meen404-exp1" onclick="loadDoc(this.id)">1. Composite Strength</a>
+                        <a id="meen404-exp2" onclick="loadDoc(this.id)">2. Static Friction</a>
+                        <a id="meen404-exp3" onclick="loadDoc(this.id)">3. Oobleck Viscosity</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- footer -->

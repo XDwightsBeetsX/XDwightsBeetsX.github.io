@@ -7,11 +7,12 @@
     <meta charset="utf-8" description="engr482">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../../styles/shared.css">
-    <link rel="stylesheet" href="../../styles/index.css">
-    <link rel="stylesheet" href="../../styles/school/school.css">
+    <link rel="stylesheet" href="../../styles/shared/layout.css">
+    <link rel="stylesheet" href="../../styles/shared/dropdown.css">
+    <link rel="stylesheet" href="../../styles/shared/school-menu-dropdown.css">
+    <link rel="stylesheet" href="../../styles/shared/school.css">
 
-    <script src="../../js/school/engr482.js"></script>
+    <script src="../../js/pages/school/engr482.js"></script>
 </head>
 
 <body>
@@ -25,35 +26,25 @@
         <div class="content-wrapper">
             <!-- left -->
             <div class="left-wrapper">
-                <a href="../../index.html">Bio</a>
-                <a href="../../content/resume.html">Resume</a>
-                <a href="../../content/dev.html">Projects</a>
-                <a href="../../content/tws.html">Texas Water Safari</a>
-                <a href="../../content/fire.html">We Didn't Start the Fire</a>
-                <div class="dropdown" href="#">
+                <div class="dropdown">
+                    <div class="dropdown-items">
+                        <a href="../../index.html">About Me</a>
+                        <a href="../../content/resume.html">Resume</a>
+                        <a href="../../content/dev.html">Projects</a>
+                        <a href="../../content/tws.html">Texas Water Safari</a>
+                        <a href="../../content/fire.html">We Didn't Start the Fire</a>
+                    </div>
+                </div>
+
+                <div id="school-menu-dropdown" class="dropdown" href="#">
                     <label>School</label>
-                    <div class="dropdown-item">
-                        <div class="dropdown-item-content">
-                            <label>Fall 2018</label>
-                            <a href="../school/pols207.html">POLS 207</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Spring 2021</label>
-                            <a href="../school/meen368.html">MEEN 368</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Fall 2021</label>
-                            <a href="../school/meen404.html">MEEN 404</a>
-                            <a href="../school/engr482.html">ENGR 482</a>
-                            <a href="../school/csce312.html">CSCE 312</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Other</label>
-                            <a href="../school/math-review.html">Math Review</a>
-                        </div>
+                    <div class="dropdown-items">
+                        <a href="../../content/school/pols207.html">POLS 207</a>
+                        <a href="../../content/school/meen368.html">MEEN 368</a>
+                        <a href="../../content/school/meen404.html">MEEN 404</a>
+                        <a href="../../content/school/engr482.html">ENGR 482</a>
+                        <a href="../../content/school/csce312.html">CSCE 312</a>
+                        <a href="../../content/school/math-review.html">Math Review</a>
                     </div>
                 </div>
             </div>
@@ -62,59 +53,33 @@
             <div class="center-wrapper">
                 <div class="center-content">
                     <div class="school-content">
-                        <div class="dropdown school-dropdown">
-                            <label>Notes</label>
-                            <div class="dropdown-item">
-                                <a id="engr482-intro" onclick="loadDoc(this.id)">Intro</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-utilitarianism" onclick="loadDoc(this.id)">Utilitarianism</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-kantianism" onclick="loadDoc(this.id)">Kantianism</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-aspirational" onclick="loadDoc(this.id)">Aspirational</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="virtue" onclick="loadDoc(this.id)">Virtue</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-risk" onclick="loadDoc(this.id)">Risk</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-company_culture" onclick="loadDoc(this.id)">Company Culture</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-impediments" onclick="loadDoc(this.id)">Impediments</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-professionalism" onclick="loadDoc(this.id)">Professionalism</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-artifacts" onclick="loadDoc(this.id)">Artifacts</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-ellul" onclick="loadDoc(this.id)">Ellul's Critique</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-environment" onclick="loadDoc(this.id)">Environmental Ethics</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-international" onclick="loadDoc(this.id)">International Professionalism</a>
-                            </div>
-                            <div class="dropdown-item">
-                                <a id="engr482-privacy" onclick="loadDoc(this.id)">Privacy</a>
-                            </div>
-                        </div>
-    
                         <iframe id="engr482" class="pdf" src="https://drive.google.com/file/d/1j6D5leBob4RYfDST90ivdDmOQRPXcgxK/preview"></iframe>
                     </div>
                 </div>
             </div>
 
             <!-- right -->
-            <!-- <div class="right-wrapper"></div> -->
+            <div class="right-wrapper">
+                <div class="dropdown school-dropdown">
+                    <label>ENGR 482 Notes</label>
+                    <div class="dropdown-items">
+                        <a id="engr482-intro" onclick="loadDoc(this.id)">Intro</a>
+                        <a id="engr482-utilitarianism" onclick="loadDoc(this.id)">Utilitarianism</a>
+                        <a id="engr482-kantianism" onclick="loadDoc(this.id)">Kantianism</a>
+                        <a id="engr482-aspirational" onclick="loadDoc(this.id)">Aspirational</a>
+                        <a id="virtue" onclick="loadDoc(this.id)">Virtue</a>
+                        <a id="engr482-risk" onclick="loadDoc(this.id)">Risk</a>
+                        <a id="engr482-company_culture" onclick="loadDoc(this.id)">Company Culture</a>
+                        <a id="engr482-impediments" onclick="loadDoc(this.id)">Impediments</a>
+                        <a id="engr482-professionalism" onclick="loadDoc(this.id)">Professionalism</a>
+                        <a id="engr482-artifacts" onclick="loadDoc(this.id)">Artifacts</a>
+                        <a id="engr482-ellul" onclick="loadDoc(this.id)">Ellul's Critique</a>
+                        <a id="engr482-environment" onclick="loadDoc(this.id)">Environmental Ethics</a>
+                        <a id="engr482-international" onclick="loadDoc(this.id)">International Professionalism</a>
+                        <a id="engr482-privacy" onclick="loadDoc(this.id)">Privacy</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- footer -->
