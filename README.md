@@ -1,5 +1,10 @@
-# ***[John's Website](https://xdwightsbeetsx.github.io/)***
+# My Site
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fxdwightsbeetsx.github.io&count_bg=%233D8CC8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=site+hits&edge_flat=false)](https://hits.seeyoufarm.com)
+I've put together sort of an online resume with some content from work I've done at A&M University, and some other projects like programming packages and other websites I made.
 
-[![site](https://user-images.githubusercontent.com/55027279/155903202-09d3d465-2a00-45c6-9b45-2c56128e9cf0.png)](https://xdwightsbeetsx.github.io/)
+- [Full Site](https://xdwightsbeetsx.github.io/)
+- [Side-Projects](https://xdwightsbeetsx.github.io/content/dev.html)
+- [The Texas Water Safari](https://xdwightsbeetsx.github.io/content/tws.html)
+
+
+<a href="https://xdwightsbeetsx.github.io/"><img src="https://user-images.githubusercontent.com/55027279/155903202-09d3d465-2a00-45c6-9b45-2c56128e9cf0.png" style="width:720px; height:auto;"></a>
