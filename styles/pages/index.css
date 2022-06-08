@@ -12,6 +12,6 @@
     border-radius: 5px;
 }
 
-a:hover {
+.center-content > p > a:hover {
     font-style: italic;
 }
