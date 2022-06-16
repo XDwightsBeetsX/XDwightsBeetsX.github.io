@@ -10,11 +10,8 @@ function loadDoc(docId) {
     
     // sub-dropdown options
     switch(pageName) {
-        case "project":
-            // water wheel
-            break;
-        case "book":
-            url = "https://drive.google.com/file/d/1wynxfk8zOIKHtJQbzf_DCPgjmEE51OSe/preview";
+        case "":
+            // url = "";
             break;
         default:
             // water wheel
