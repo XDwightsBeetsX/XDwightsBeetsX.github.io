@@ -7,8 +7,11 @@
     <meta charset="utf-8" description="dev">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="../styles/shared.css">
-    <link rel="stylesheet" href="../styles/dev.css">
+    <link rel="stylesheet" href="../styles/shared/layout.css">
+    <link rel="stylesheet" href="../styles/shared/dropdown.css">
+    <link rel="stylesheet" href="../styles/shared/school-menu-dropdown.css">
+    
+    <link rel="stylesheet" href="../styles/pages/dev.css">
 </head>
 
 <body>
@@ -24,35 +27,25 @@
         <div class="content-wrapper">
             <!-- left -->
             <div class="left-wrapper">
-                <a href="../index.html">Bio</a>
-                <a href="../content/resume.html">Resume</a>
-                <a href="../content/dev.html">Projects</a>
-                <a href="../content/tws.html">Texas Water Safari</a>
-                <a href="../content/fire.html">We Didn't Start the Fire</a>
-                <div class="dropdown" href="#">
+                <div class="dropdown">
+                    <div class="dropdown-items">
+                        <a href="../index.html">About Me</a>
+                        <a href="../content/resume.html">Resume</a>
+                        <a href="../content/dev.html">Projects</a>
+                        <a href="../content/tws.html">Texas Water Safari</a>
+                        <a href="../content/fire.html">We Didn't Start the Fire</a>
+                    </div>
+                </div>
+
+                <div id="school-menu-dropdown" class="dropdown" href="#">
                     <label>School</label>
-                    <div class="dropdown-item">
-                        <div class="dropdown-item-content">
-                            <label>Fall 2018</label>
-                            <a href="../content/school/pols207.html">POLS 207</a>
-                        </div>
-
-                        <div class="dropdown-item-content">
-                            <label>Spring 2021</label>
-                            <a href="../content/school/meen368.html">MEEN 368</a>
-                        </div>
-
-                        <div class="dropdown-item-content">
-                            <label>Fall 2021</label>
-                            <a href="../content/school/meen404.html">MEEN 404</a>
-                            <a href="../content/school/engr482.html">ENGR 482</a>
-                            <a href="../content/school/csce312.html">CSCE 312</a>
-                        </div>
-                        
-                        <div class="dropdown-item-content">
-                            <label>Other</label>
-                            <a href="../content/school/math-review.html">Math Review</a>
-                        </div>
+                    <div class="dropdown-items">
+                        <a href="../content/school/pols207.html">POLS 207</a>
+                        <a href="../content/school/meen368.html">MEEN 368</a>
+                        <a href="../content/school/meen404.html">MEEN 404</a>
+                        <a href="../content/school/engr482.html">ENGR 482</a>
+                        <a href="../content/school/csce312.html">CSCE 312</a>
+                        <a href="../content/school/math-review.html">Math Review</a>
                     </div>
                 </div>
             </div>
@@ -153,11 +146,12 @@
                                     <p>
                                         I got down and dirty with C++ again to make a sudoku solver. 
                                         This was a good refresher in C++ and using make since I tend to forget the little details that come up in low-level languages.
+                                        Using C++ meant that the program would run quickly and across all platforms.
+                                        I even added sudoku puzzle generation.
                                     </p>
                                     <p>
                                         This turned out pretty well, but I'm going to add some things to scale things up a bit:
                                         <ul>
-                                            <li>Sudoku puzzle generation</li>
                                             <li>Solve all sudoku puzzles in a given folder</li>
                                         </ul>
                                     </p>
@@ -199,8 +193,8 @@
                                         </ul>
                                     </p>
                                     <p>
-                                        Check out the website 
-                                        <a class="verdana-gray" href="https://github.com/XDwightsBeetsX/tournament-bracket" target="_blank">here</a>!
+                                        Check out the 
+                                        <a class="verdana-gray" href="https://github.com/XDwightsBeetsX/tournament-bracket" target="_blank">github repo</a>!
                                     </p>
                                 </div>
                             </div>
@@ -258,9 +252,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- right -->
-            <div class="right-wrapper"></div>
         </div>
 
         <!-- footer -->
@@ -269,10 +260,10 @@
                 <a href="mailto:gutierrezjohn2000@gmail.com">
                     <img src="../img/gmail_icon.png">
                 </a>
-                <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/">
+                <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/" target="_blank">
                     <img src="../img/linkedin_icon.png">
                 </a>
-                <a href="https://github.com/XDwightsBeetsX">
+                <a href="https://github.com/XDwightsBeetsX" target="_blank">
                     <img src="../img/github_icon.png">
                 </a>
             </div>

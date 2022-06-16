@@ -11,17 +11,25 @@
         width: 100%;
     }
 }
+
+/* shared.css overrides */
 body {
     margin: 0;
 }
 p {
     margin: 5px 0 5px 30px;
     padding: 5px 0;
+    
+    overflow: auto;
+    word-wrap: break-word;
 }
 a:hover {
     cursor: pointer;
 }
-
+a {
+    color: #3d78b7;
+    text-decoration: none;
+}
 
 /*==============================*/
 /*==== Page Layout Sections ====*/
@@ -42,21 +50,19 @@ a:hover {
 .left-wrapper {
     display: flex;
     flex-direction: column;
-    width: 16%;
+    width: 15%;
     margin: 5px;
 }
 .center-wrapper {
     display: flex;
     flex-direction: column;
-    width: 78%;
+    width: 85%;
     margin: 5px;
 }
-.right-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 6%;
-    margin: 5px;
-}
+/*
+.right-wrapper {}
+(only used in school.css)
+*/
 .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -85,90 +91,14 @@ a:hover {
 }
 .page-header > a:hover {
     text-decoration: underline;
+    font-style: italic;
 }
 
 
 /*==============================*/
 /*============ Left ============*/
 /*==============================*/
-.left-wrapper > div,
-.left-wrapper > a {
-    width: 100%;
-    margin: 3px;
 
-    color: gray;
-    background-color: #e5e5e5;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-
-    line-height: 30px;
-    text-align: center;
-    font-family: Verdana;
-    text-decoration: none;
-}
-.left-wrapper > div:hover,
-.left-wrapper > a:hover {
-    background-color: lightgray;
-}
-
-/* DROPDOWN MENU */
-.dropdown {
-    width: 100%;
-
-    color: gray;
-    background-color: #e5e5e5;
-    
-    border: 1px solid lightgray;
-    border-radius: 5px;
-
-    text-align: center;
-    font-family: Verdana;
-    text-decoration: none;
-    line-height: 30px;
-}
-
-.dropdown-item {
-    display: none;
-}
-.dropdown:hover .dropdown-item {
-    display: block;
-}
-.dropdown:click .dropdown-item {
-    display: block;
-}
-
-.dropdown-item-content {
-    display: flex;
-    flex-direction: column;
-
-    margin: 3px;
-    padding-left: 5px;
-
-    color: gray;
-    background-color: #e5e5e5;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-
-    text-align: left;
-    text-decoration: none;
-}
-
-.dropdown-item-content > a {
-    padding-left: 5px;
-    margin: 3px;
-
-    background-color: #e5e5e5;
-    border: 1px solid lightgray;
-    border-radius: 5px;
-
-    color: gray;
-    font-family: Verdana;
-    text-decoration: none;
-    line-height: 30px;
-}
-.dropdown-item-content > a:hover {
-    background-color: lightgray;
-}
 
 /*==============================*/
 /*=========== Right ============*/
