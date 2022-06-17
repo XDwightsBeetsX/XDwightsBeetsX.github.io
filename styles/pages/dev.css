@@ -50,6 +50,7 @@
     font-family: Verdana;
     color: gray;
 }
+
 .proj > .imgs {
     display: flex;
     flex-direction: column;
