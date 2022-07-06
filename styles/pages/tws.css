@@ -1,4 +1,4 @@
-
+/* content sections */
 .tws-content {
     display: flex;
     flex-direction: column;
@@ -15,23 +15,29 @@
 }
 .tws-sub-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
 }
-.tws-sub-content > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    width: 100%;
+/* tws sub imgs */
+#yeti-vid {
+    width: 50%;
     max-width: 50%;
-    padding: 10px;
+    height: 300px;
 }
-
-.tws-media-embedded {
+.img-float-right {
+    float: right;
     width: 100%;
+    max-width: 400px;
     height: auto;
-    min-height: 300px;
-
+    margin: 10px;
+    border-radius: 5px;
+}
+.img-float-left {
+    float: left;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px;
     border-radius: 5px;
 }
