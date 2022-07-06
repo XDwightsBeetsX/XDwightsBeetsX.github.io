@@ -12,24 +12,17 @@
     }
 }
 
-/* shared.css overrides */
 body {
     margin: 0;
 }
-p {
-    margin: 5px 0 5px 30px;
-    padding: 5px 0;
-    
-    overflow: auto;
-    word-wrap: break-word;
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin: 2px;
 }
-a:hover {
-    cursor: pointer;
-}
-a {
-    color: #3d78b7;
-    text-decoration: none;
-}
+
 
 /*==============================*/
 /*==== Page Layout Sections ====*/
@@ -58,11 +51,8 @@ a {
     flex-direction: column;
     width: 85%;
     margin: 5px;
+    padding-right: 10%;
 }
-/*
-.right-wrapper {}
-(only used in school.css)
-*/
 .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -144,13 +134,8 @@ a {
 
 
 /*==============================*/
-/*====== Fonts and Styles ======*/
+/*===== Object Formatting ======*/
 /*==============================*/
-.verdana-gray {
-    font-family: Verdana;
-    color: gray;
-}
-
 .center-span {
     display: flex;
     flex-direction: row;

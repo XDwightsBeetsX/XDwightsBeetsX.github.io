@@ -1,7 +1,3 @@
-/* seems more legible */
-.center-wrapper {
-    width: 65%;
-}
 
 #profile-pic {
     float: right;
@@ -10,8 +6,4 @@
     min-width: 100px;
     max-width: 400px;
     border-radius: 5px;
-}
-
-.center-content > p > a:hover {
-    font-style: italic;
 }

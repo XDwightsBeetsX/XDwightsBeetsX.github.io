@@ -27,29 +27,43 @@
 
     width: 50%;  /* match with the right side: imgs */
 }
-.proj > .info > .header {
-    line-height: 50px;
-    margin: 5px;
 
+/* project headers */
+.header-git-icon {
+    width: 25px;
+    height: 25px;
+}
+.proj > .info > .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+
+    color: gray;
+    font-size: 16pt;
+    font-family: Verdana;
+    border-radius: 5px;
     text-align: center;
     text-decoration: underline;
 }
-.proj > .info > .header > a {
-    font-size: 16pt;
-    font-family: Verdana;
-    
-    color: gray;
-}
-.proj > .info > .header > a:hover {
+.proj > .info > .header:hover {
     cursor: pointer;
     font-style: italic;
+    background-color: lightgray;
 }
+.proj > .info > .header > span {
+    margin-left: 5px;
+}
+
+/* project description */
 .proj > .info > .description {
     padding: 5px;
     
     font-family: Verdana;
     color: gray;
 }
+
+/* project images */
 .proj > .imgs {
     display: flex;
     flex-direction: column;

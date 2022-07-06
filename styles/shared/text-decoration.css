@@ -1,0 +1,33 @@
+/* generic alterations to text and small object attributes */
+
+h2 {
+    margin: 5px 0 5px 5px;
+    padding-left: 20px;
+}
+
+p {
+    margin: 5px 0 5px 30px;
+    padding: 5px 5px 0 5px;
+    
+    overflow: auto;
+    word-wrap: break-word;
+
+    font-family: Verdana;
+    color: gray;
+}
+
+/* links */
+a {
+    color: #3d78b7;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+/* fonts */
+.verdana-gray {
+    font-family: Verdana;
+    color: gray;
+}

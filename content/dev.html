@@ -2,274 +2,277 @@
 <html lang="en">
 
 <head>
-    <title>Dev Projects</title>
+	<title>Dev Projects</title>
 
-    <meta charset="utf-8" description="dev">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="../styles/shared/layout.css">
-    <link rel="stylesheet" href="../styles/shared/dropdown.css">
-    <link rel="stylesheet" href="../styles/shared/school-menu-dropdown.css">
-    
-    <link rel="stylesheet" href="../styles/pages/dev.css">
+	<meta charset="utf-8" description="dev">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="../styles/shared/layout.css">
+	<link rel="stylesheet" href="../styles/shared/dropdown.css">
+	<link rel="stylesheet" href="../styles/shared/school-menu-dropdown.css">
+	<link rel="stylesheet" href="../styles/shared/text-decoration.css">
+	
+	<link rel="stylesheet" href="../styles/pages/dev.css">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <!-- header -->
-        <div class="header-wrapper">
-            <div class="page-header">
-                <a href="https://github.com/XDwightsBeetsX" target="_blank">Projects</a>
-            </div>
-        </div>
+	<div class="page-wrapper">
+		<!-- header -->
+		<div class="header-wrapper">
+			<div class="page-header">
+				<a href="https://github.com/XDwightsBeetsX" target="_blank">Projects</a>
+			</div>
+		</div>
 
-        <!-- content -->
-        <div class="content-wrapper">
-            <!-- left -->
-            <div class="left-wrapper">
-                <div class="dropdown">
-                    <div class="dropdown-items">
-                        <a href="../index.html">About Me</a>
-                        <a href="../content/resume.html">Resume</a>
-                        <a href="../content/dev.html">Projects</a>
-                        <a href="../content/tws.html">Texas Water Safari</a>
-                        <a href="../content/fire.html">We Didn't Start the Fire</a>
-                    </div>
-                </div>
+		<!-- content -->
+		<div class="content-wrapper">
+			<!-- left -->
+			<div class="left-wrapper">
+				<div class="dropdown">
+					<div class="dropdown-items">
+						<a href="../index.html">About Me</a>
+						<a href="../content/resume.html">Resume</a>
+						<a href="../content/dev.html">Projects</a>
+						<a href="../content/tws.html">Texas Water Safari</a>
+						<a href="../content/fire.html">We Didn't Start the Fire</a>
+					</div>
+				</div>
 
-                <div id="school-menu-dropdown" class="dropdown" href="#">
-                    <label>School</label>
-                    <div class="dropdown-items">
-                        <a href="../content/school/pols207.html">POLS 207</a>
-                        <a href="../content/school/meen368.html">MEEN 368</a>
-                        <a href="../content/school/meen404.html">MEEN 404</a>
-                        <a href="../content/school/engr482.html">ENGR 482</a>
-                        <a href="../content/school/csce312.html">CSCE 312</a>
-                        <a href="../content/school/math-review.html">Math Review</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- center content -->
-            <div class="center-wrapper">
-                <div class="center-content">
-                    <div class="proj-wrapper">
+				<div id="school-menu-dropdown" class="dropdown" href="#">
+					<label>School</label>
+					<div class="dropdown-items">
+						<a href="../content/school/pols207.html">POLS 207</a>
+						<a href="../content/school/meen368.html">MEEN 368</a>
+						<a href="../content/school/meen404.html">MEEN 404</a>
+						<a href="../content/school/engr482.html">ENGR 482</a>
+						<a href="../content/school/csce312.html">CSCE 312</a>
+						<a href="../content/school/math-review.html">Math Review</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- center content -->
+			<div class="center-wrapper">
+				<div class="center-content">
+					<div class="proj-wrapper">
 
-                        <!-- BEAM ANALYSIS -->
-                        <div class="proj">
-                            <div class="info">
-                                <div class="header">
-                                    <a href="https://github.com/XDwightsBeetsX/beam-analysis" target="_blank">Beam Analysis</a>
-                                </div>
+						<!-- BEAM ANALYSIS -->
+						<div class="proj">
+							<div class="info">
+								<a class="header" href="https://github.com/XDwightsBeetsX/beam-analysis" target="_blank">
+									<img class="header-git-icon" src="../img/github_icon.png" title="go to the repo" alt="go to the repo">
+									<span>Beam Analysis</span>
+								</a>
 
-                                <div class="description">
-                                    <p>
-                                        I wrote a beam analysis package in python to do my engineering homework for me, 
-                                        but ended up actually learning the material instead.
-                                    </p>
-                                    <p>
-                                        The code implements the double-integration method of the beam moment equation.
-                                        This allowed for the resultant force, moment, angle, and deflection at any point in the beam to be solved given proper boundary conditions. 
-                                        Running the program shows plots for all these variables, and gives the maximum stress and location.
-                                    </p>    
-                                    <p>
-                                        I've gone back and updated the package to do some cool new things:
-                                        <ul>
-                                            <li>Tracking of parameters in XY and XZ planes</li>
-                                            <li>3D modelling of the deflection using matplotlib</li>
-                                            <li>Generate a report with information from the analysis</li>
-                                        </ul>
-                                    </p>
-                                    <p>
-                                        You can get this from the PYPI package manager 
-                                        <a class="verdana-gray" href="https://pypi.org/project/beam-analysis/" target="_blank">here</a>!
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="imgs">
-                                <div class="img-row">
-                                    <div class="img-wrapper">
-                                        <img src="../img/beam_analysis_cantilever.png" title="Cantilever Beam" alt="Cantilever Beam">
-                                    </div>
-                                </div>
-                                <div class="img-row">
-                                    <div class="img-wrapper">
-                                        <img src="../img/beam_analysis_fixed.png" title="Fixed-Support Beam" alt="Fixed-Support Beam">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+								<div class="description">
+									<p>
+										I wrote a beam analysis package in python to do my engineering homework for me, 
+										but ended up actually learning the material instead.
+									</p>
+									<p>
+										The code implements the double-integration method of the beam moment equation.
+										This allowed for the resultant force, moment, angle, and deflection at any point in the beam to be solved given proper boundary conditions. 
+									</p>
+									<p>
+										Running the program shows plots for all these variables, and gives the maximum stress and location.
+									</p>    
+									<p>
+										I've gone back and updated the package to do some cool new things:
+										<ul>
+											<li>Tracking of parameters in XY and XZ planes</li>
+											<li>3D modelling of the deflection using matplotlib</li>
+											<li>Generate a report with information from the analysis</li>
+										</ul>
+									</p>
+									<p>
+										Click<a href="https://pypi.org/project/beam-analysis/" target="_blank"> here </a>to see it on PYPI!
+									</p>
+								</div>
+							</div>
+							
+							<div class="imgs">
+								<div class="img-row">
+									<div class="img-wrapper">
+										<img src="../img/beam_analysis_cantilever.png" title="Cantilever Beam" alt="Cantilever Beam">
+									</div>
+								</div>
+								<div class="img-row">
+									<div class="img-wrapper">
+										<img src="../img/beam_analysis_fixed.png" title="Fixed-Support Beam" alt="Fixed-Support Beam">
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <!-- TOPOGRAPHY -->
-                        <div class="proj">
-                            <div class="info">
-                                <div class="header">
-                                    <a href="https://github.com/XDwightsBeetsX/topography" target="_blank">Topography</a>
-                                </div>
-                                
-                                <div class="description">
-                                    <p>
-                                        I wrote a topography package in python mostly for the heck of it,
-                                        but learned some cool stuff on the way and published it to 
-                                        <a class="verdana-gray" href="https://pypi.org/project/topography/" target="_blank">PYPI</a> 
-                                        too!
-                                    </p>
-                                    <p>
-                                        Things I'll try and work on in my free time for this:
-                                        <ul>
-                                            <li>bilinear interpolation</li>
-                                            <li>bicubic interpolation</li>
-                                            <li>terrain generation with perlin or simplex noise</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
+						<!-- TOPOGRAPHY -->
+						<div class="proj">
+							<div class="info">
+								<a class="header" href="https://github.com/XDwightsBeetsX/topography" target="_blank">
+									<img class="header-git-icon" src="../img/github_icon.png" title="go to the repo" alt="go to the repo">
+									<span>Topography</span>
+								</a>
+								
+								<div class="description">
+									<p>
+										I wrote a topography package in python mostly for the heck of it,
+										but learned some cool stuff on the way and published it to PYPI!
+									</p>
+									<p>
+										Things I'll try and work on in my free time for this:
+										<ul>
+											<li>bilinear interpolation</li>
+											<li>bicubic interpolation</li>
+											<li>terrain generation with perlin or simplex noise</li>
+										</ul>
+									</p>
+									<p>
+										Click<a href="https://pypi.org/project/topography/" target="_blank"> here </a>to see it on PYPI!
+									</p>
+								</div>
+							</div>
 
-                            <div class="imgs" href="https://github.com/XDwightsBeetsX/topography" target="_blank">
-                                <div class="img-row">
-                                    <div class="img-wrapper">
-                                        <img src="../img/dev-topography-graph.png" title="topography-graph" alt="topography-graph">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+							<div class="imgs" href="https://github.com/XDwightsBeetsX/topography" target="_blank">
+								<div class="img-row">
+									<div class="img-wrapper">
+										<img src="../img/dev-topography-graph.png" title="topography-graph" alt="topography-graph">
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <!-- SUDOKU SOLVER -->
-                        <div class="proj">
-                            <div class="info">
-                                <div class="header">
-                                    <a href="https://github.com/XDwightsBeetsX/sudoku" target="_blank">Sudoku Solver</a>
-                                </div>
-                                
-                                <div class="description">
-                                    <p>
-                                        I got down and dirty with C++ again to make a sudoku solver. 
-                                        This was a good refresher in C++ and using make since I tend to forget the little details that come up in low-level languages.
-                                        Using C++ meant that the program would run quickly and across all platforms.
-                                        I even added sudoku puzzle generation.
-                                    </p>
-                                    <p>
-                                        This turned out pretty well, but I'm going to add some things to scale things up a bit:
-                                        <ul>
-                                            <li>Solve all sudoku puzzles in a given folder</li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
+						<!-- SUDOKU SOLVER -->
+						<div class="proj">
+							<div class="info">
+								<a class="header" href="https://github.com/XDwightsBeetsX/sudoku" target="_blank">
+									<img class="header-git-icon" src="../img/github_icon.png" title="go to the repo" alt="go to the repo">
+									<span>Sudoku Solver</span>
+								</a>
+								
+								<div class="description">
+									<p>
+										I got down and dirty with C++ again to make a sudoku solver (and generator). 
+										This was a good refresher in C++ and using make since I tend to forget the little details that come up in low-level languages.
+										<br>
+										Using C++ means the program runs quickly and across all platforms.
+									</p>
+									<p>
+										This turned out pretty well, but I'm going to add some things to scale things up a bit:
+										<ul>
+											<li>Solve all sudoku puzzles in a given folder</li>
+										</ul>
+									</p>
+								</div>
+							</div>
 
-                            <div class="imgs">
-                                <div class="img-row">
-                                    <div class="img-wrapper">
-                                        <img src="../img/sudoku_puzzle.png" title="Sudoku Puzzle" alt="Sudoku Puzzle">
-                                    </div>
-                                    
-                                    <div class="img-wrapper">
-                                        <img src="../img/sudoku_solution.png" title="Sudoku Solution" alt="Sudoku Solution">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+							<div class="imgs">
+								<div class="img-row">
+									<div class="img-wrapper">
+										<img src="../img/sudoku_puzzle.png" title="Sudoku Puzzle" alt="Sudoku Puzzle">
+									</div>
+									
+									<div class="img-wrapper">
+										<img src="../img/sudoku_solution.png" title="Sudoku Solution" alt="Sudoku Solution">
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <!-- TOURNAMENT BRACKET MAKER -->
-                        <div class="proj">
-                            <div class="info">
-                                <div class="header">
-                                    <a href="https://github.com/XDwightsBeetsX/tournament-bracket" target="_blank">
-                                        Tournament Bracket Maker
-                                    </a>
-                                </div>
+						<!-- TOURNAMENT BRACKET MAKER -->
+						<div class="proj">
+							<div class="info">
+								<a class="header" href="https://github.com/XDwightsBeetsX/tournament-bracket" target="_blank">
+									<img class="header-git-icon" src="../img/github_icon.png" title="go to the repo" alt="go to the repo">
+									<span>Tournament Bracket Maker</span>
+								</a>
 
-                                <div class="description">
-                                    <p>
-                                        I wrote a tournament bracket generator for dye tournaments,
-                                        but it can be used for all kinds of things!
-                                    </p>
-                                    <p>
-                                        This project is working well, but down the road I hope to add some features:
-                                        <ul>
-                                            <li>.csv download & upload</li>
-                                            <li>cooler site design</li>
-                                        </ul>
-                                    </p>
-                                    <p>
-                                        Check out the 
-                                        <a class="verdana-gray" href="https://github.com/XDwightsBeetsX/tournament-bracket" target="_blank">github repo</a>!
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="imgs">
-                                <div class="img-row">
-                                    <div class="img-wrapper">
-                                        <img src="../img/dev-tournament-bracket.png" title="tournament-bracket" alt="tournament-bracket">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+								<div class="description">
+									<p>
+										I wrote a tournament bracket generator for dye tournaments,
+										but it can be used for all kinds of things!
+									</p>
+									<p>
+										This project is working well, but down the road I hope to add some features:
+										<ul>
+											<li>.csv download & upload</li>
+											<li>cooler site design</li>
+										</ul>
+									</p>
+									<p>
+										Click<a href="https://xdwightsbeetsx.github.io/tournament-bracket/"> here </a>to go to the site!
+									</p>
+								</div>
+							</div>
+							
+							<div class="imgs">
+								<div class="img-row">
+									<div class="img-wrapper">
+										<img src="../img/dev-tournament-bracket.png" title="tournament-bracket" alt="tournament-bracket">
+									</div>
+								</div>
+							</div>
+						</div>
 
-                        <!-- MORSE CODE CONVERTER -->
-                        <div class="proj">
-                            <div class="info">
-                                <div class="header">
-                                    <a href="https://xdwightsbeetsx.github.io/morse-conv/" target="_blank">
-                                        Morse Code Converter
-                                    </a>
-                                </div>
+						<!-- MORSE CODE CONVERTER -->
+						<div class="proj">
+							<div class="info">
+								<a class="header" href="https://github.com/XDwightsBeetsX/morse-conv" target="_blank">
+									<img class="header-git-icon" src="../img/github_icon.png" title="go to the repo" alt="go to the repo">
+									<span>Morse Code Converter</span>
+								</a>
 
-                                <div class="description">
-                                    <p>
-                                        I like to learn about the history of computers, and early electromechanical inventions.
-                                        The telegraph was incredibly important in the early days of communication, 
-                                        and encoded words and symbols in a series of dots and dashes.
-                                    </p>
-                                    <p>
-                                        I thought it might be cool to have a converter available to convert English to Morse Code quickly with a clean web interface.
-                                    </p>
-                                    <p>
-                                        I threw this together quickly, but it turned out well. If I come back to it, I'll add:
-                                        <ul>
-                                            <li>
-                                                Morse Code -> English Conversion
-                                            </li>
-                                            <li>
-                                                User can decide what sort of delimiters are used: (. vs *) and (- vs _)
-                                            </li>
-                                        </ul>
-                                    </p>
-                                </div>
-                            </div>
+								<div class="description">
+									<p>
+										I like to learn about the history of computers, and early electromechanical inventions.
+										The telegraph was incredibly important in the early days of communication, 
+										and encoded words and symbols in a series of dots and dashes.
+									</p>
+									<p>
+										I threw this together quickly, but it turned out well. If I come back to it, I'll add:
+										<ul>
+											<li>
+												Morse Code -> English Conversion
+											</li>
+											<li>
+												User can decide what sort of delimiters are used: (. vs *) and (- vs _)
+											</li>
+										</ul>
+									</p>
+									<p>
+										Click<a href="https://xdwightsbeetsx.github.io/morse-conv/"> here </a>to go to the site!
+									</p>
+								</div>
+							</div>
 
-                            <div class="imgs">
-                                <div class="img-row">
-                                    <div class="img-wrapper">
-                                        <img src="../img/morse-conv.png" title="morse code converter" alt="morse code converter">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+							<div class="imgs">
+								<div class="img-row">
+									<div class="img-wrapper">
+										<img src="../img/morse-conv.png" title="morse code converter" alt="morse code converter">
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- footer -->
-        <div class="footer-wrapper">
-            <div class="center-span link-icons">
-                <a href="mailto:gutierrezjohn2000@gmail.com">
-                    <img src="../img/gmail_icon.png">
-                </a>
-                <a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/" target="_blank">
-                    <img src="../img/linkedin_icon.png">
-                </a>
-                <a href="https://github.com/XDwightsBeetsX" target="_blank">
-                    <img src="../img/github_icon.png">
-                </a>
-            </div>
-            <a class="center-span verdana-gray">© October 2021</a>
-        </div>
-    </div>
+		<!-- footer -->
+		<div class="footer-wrapper">
+			<div class="center-span link-icons">
+				<a href="mailto:gutierrezjohn2000@gmail.com">
+					<img src="../img/gmail_icon.png">
+				</a>
+				<a href="https://www.linkedin.com/in/john-gutierrez-aa0830170/" target="_blank">
+					<img src="../img/linkedin_icon.png">
+				</a>
+				<a href="https://github.com/XDwightsBeetsX" target="_blank">
+					<img src="../img/github_icon.png">
+				</a>
+			</div>
+			<span class="center-span verdana-gray">© October 2021</span>
+		</div>
+	</div>
 </body>
 
 </html>

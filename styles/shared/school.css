@@ -1,6 +1,7 @@
 /* adjust wrappers to fit right menus */
 .center-wrapper {
     width: 67%;
+    padding: 0;  /* fill center, normal: 10% */
 }
 .right-wrapper {
     display: flex;
